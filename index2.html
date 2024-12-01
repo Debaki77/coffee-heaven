@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage Layout</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+        <!-- Header Section -->
+        <header>
+            <div class="logo">MyWebsite</div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>&#128269;</button>
+            </div>
+        </header>
+    
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to Our Website</h1>
+            <button>Get Started</button>
+        </section>
+    
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div>
+                <h2>Feature 1</h2>
+                <p>Our first amazing feature helps you achieve your goals.</p>
+            </div>
+            <div>
+                <h2>Feature 2</h2>
+                <p>Our second amazing feature provides incredible value.</p>
+            </div>
+            <div>
+                <h2>Feature 3</h2>
+                <p>Our third amazing feature is top-notch and reliable.</p>
+            </div>
+        </section>
+    
+       <!-- Review Section -->
+       <section id="review"> 
+        <h3>Leave a review</h3>
+        <form class="comment-form" id="reviewForm" onsubmit="submitReview(event)">
+            <input type="text" name="author" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email (optional)">
+            <textarea name="review" placeholder="Your review..." rows="5" required></textarea>
+            <button type="submit">Submit review</button>
+        </form>
+        <div id="reviewsContainer">
+            <h4>Reviews:</h4>
+            <div id="reviewsList"></div>
+        </div>
+    </section>
+    
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <h2>Our Work</h2>
+            
+         
+                <div class="project">
+                    <h3>Newspaper</h3>
+                    
+                    <a href="//debaki-upreti.github.io/newspaper/" target="_blank">Newspaper</a>
+                        <p>A dynamic newspaper website displaying the latest news articles, categorized by topics, with user-friendly navigation and responsive design.  </p>
+                  
+                        <br>
+                    <h3>age calculator</h3>
+                    <a href="//debaki-upreti.github.io/newspaper/" target="_blank">age calculator</a>
+                    <p>A simple web tool to calculate a user's exact age based on the input date, providing age in years, months, and days.</p>
+
+                    <br>
+                  <h3>netflix-clone</h3>
+                  <a href="//debaki-upreti.github.io/newspaper/" target="_blank">Netflix-clone</a>
+                  <p>A replica of Netflix's interface that features movie carousels, user authentication, and a responsive design using HTML, CSS, and JavaScript.</p>
+
+                  <br>
+                  
+    
+                  </div>
+              </section>
+        
+       </section>
+        
+       
+    
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    
+        <!-- Footer Section -->
+        <footer>
+            <p>Follow us on:</p>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a> | 
+            <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            
+        </footer>
+    
+     
+    
+</body>
+<script src="script2.js"></script>
+</html>

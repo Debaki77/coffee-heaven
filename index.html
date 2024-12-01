@@ -1,0 +1,103 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+<div class="bg-white">
+  <header class="sticky top-0 bg-white shadow">
+    <div class="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
+      <div class="flex items-center text-2xl">
+        <span class="font-bold text-teal-500">Coffee Haven</span>
+      </div>
+      <div class="flex mt-4 sm:mt-0">
+        <a class="px-4 text-gray-600 hover:text-teal-500" href="#features">Features</a>
+        <a class="px-4 text-gray-600 hover:text-teal-500" href="#products">Products</a>
+        <a class="px-4 text-gray-600 hover:text-teal-500" href="#contact">Contact</a>
+      </div>
+      <button type="button" class="py-3 px-8 text-sm bg-teal-500 hover:bg-teal-600 rounded text-white">Shop Now</button>
+    </div>
+  </header>
+
+  <main class="text-gray-900">
+    <section class="pt-20 md:pt-40">
+      <div class="container mx-auto px-8 lg:flex">
+        <div class="text-center lg:text-left lg:w-1/2">
+          <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">Welcome to <br><span class="text-teal-500">Coffee Haven</span></h1>
+          <p class="text-xl lg:text-2xl mt-6 font-light">Enjoy the best coffee sourced from around the world.</p>
+          <p class="mt-8 md:mt-12">
+            <button type="button" class="py-4 px-12 bg-teal-500 hover:bg-teal-600 rounded text-white">Get Started</button>
+          </p>
+        </div>
+        <div class="lg:w-1/2">
+          <img src="https://images.unsplash.com/photo-1514516875100-bc7b191e2c69" alt="Coffee" class="w-full h-auto">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="py-20">
+      <div class="container mx-auto px-8 text-center">
+        <h2 class="text-3xl font-bold mb-6">Our Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold">Quality Beans</h3>
+            <p class="mt-2">Sourced from the best farms ensuring freshness and flavor.</p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold">Sustainable</h3>
+            <p class="mt-2">We prioritize sustainability in sourcing and production.</p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold">Custom Blends</h3>
+            <p class="mt-2">Unique blends tailored for every coffee lover.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="py-20 bg-gray-200">
+      <div class="container mx-auto px-8 text-center">
+        <h2 class="text-3xl font-bold mb-6">Featured Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Coffee" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Arabica Beans</h3>
+              <p class="mt-2 text-gray-600">$14.99</p>
+              <button class="mt-4 bg-teal-500 text-white py-2 px-4 rounded hover:bg-teal-600">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1511465044587-bb4fc635c3e9" alt="Coffee" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Espresso Blend</h3>
+              <p class="mt-2 text-gray-600">$12.99</p>
+              <button class="mt-4 bg-teal-500 text-white py-2 px-4 rounded hover:bg-teal-600">Add to Cart</button>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517435078177-7849b4e1e1db" alt="Coffee" class="w-full h-64 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-bold">Dark Roast</h3>
+              <p class="mt-2 text-gray-600">$16.99</p>
+              <button class="mt-4 bg-teal-500 text-white py-2 px-4 rounded hover:bg-teal-600">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-8 text-center">
+        <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+        <form class="mx-auto max-w-md">
+          <input type="text" placeholder="Name" class="w-full p-3 mb-4 border rounded" required>
+          <input type="email" placeholder="Email" class="w-full p-3 mb-4 border rounded" required>
+          <textarea placeholder="Message" class="w-full p-3 mb-4 border rounded" rows="4" required></textarea>
+          <button type="submit" class="bg-teal-500 text-white py-2 px-4 rounded hover:bg-teal-600">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Coffee Haven. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
